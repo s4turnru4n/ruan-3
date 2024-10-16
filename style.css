@@ -1,5 +1,13 @@
+
+:root {
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #00F4BF;
+}
+
+
 body{
-    background-color: bisque;
+   background: url('img/bg-desktop.webp');
 }
 
 
@@ -9,7 +17,33 @@ body{
 
 .cartão{
     margin: 1rem 1rem;
+    background-color: aqua;
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
 }
+    
+.cartão___conteudo{
+    text-align: center;
+    background-color: aquamarine;
+    height: 100%;
+
+}    
+
+.cartão___conteudo h3{
+    background-color: tomato;
+    text-align: left;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1vw;
+}
+
+
+
+
+
 
 footer{
     background-color: black;
