@@ -23,11 +23,12 @@ body{
     flex-basis: calc(33% - 6rem);
 }
     
-.cartão___conteudo{
+.cartão___conteudo p{
     text-align: center;
-    background-color: aquamarine;
+  /* background-color: aquamarine; */
     height: 100%;
-
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out
 }    
 
 .cartão___conteudo h3{
@@ -38,11 +39,32 @@ body{
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+     backface-visibility: hidden;
+}
+
+.cartão___conteudo___pergunta p{
+  color: var(--text-color);
+   font-weight: 500;
 }
 
 
+.cartão___conteudo___resposta p{
+    color: var(--card-back-color);
+    font-weight: 700;
+}
 
+.cartão:hover .cartão___conteudo{
+    transform: rotateY(180deg);
+}
 
+.cartão___conteudo___pergunta,
+.cartão___conteudo___resposta{
+    backface-visibility: hidden;
+}
+
+.cartão___conteudo___resposta{
+    
+}
 
 
 footer{
